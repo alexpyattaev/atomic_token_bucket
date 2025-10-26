@@ -2,13 +2,21 @@
 name = "atomic_token_bucket"
 version = "0.1.0"
 edition = "2024"
+author= "Alex Pyattaev"
+license = "MIT"
+description = "Lock-free Token Bucket algorithm implemented using atomics" 
+keywords = ["network", "shaping", "limiter"]
+categories = ["algorithms", "concurrency"]
+repository = "https://github.com/alexpyattaev/atomic_token_bucket"
+homepage = "https://github.com/alexpyattaev/atomic_token_bucket"
+readme = "README.md"
 
 [dependencies]
 
 solana-svm-type-overrides ="3"
 shuttle = {version="0.7", optional=true}
 dashmap = { version="5", features = ["raw-api"], optional=true }
-cfg-if = "1.0.4"
+cfg-if = "1"
 
 [dev-dependencies]
 atomic_token_bucket={path=".", features=["keyed_rate_limiter"]}
