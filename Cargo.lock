@@ -15,7 +15,7 @@ dependencies = [
  "atomic_token_bucket",
  "cfg-if",
  "dashmap",
- "shuttle 0.8.1",
+ "shuttle",
  "solana-svm-type-overrides",
 ]
 
@@ -292,26 +292,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "shuttle"
-version = "0.8.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2ab17edba38d63047f46780cf7360acf7467fec2c048928689a5c1dd1c2b4e31"
-dependencies = [
- "assoc",
- "bitvec",
- "cfg-if",
- "generator",
- "hex",
- "owo-colors",
- "rand",
- "rand_core",
- "rand_pcg",
- "scoped-tls",
- "smallvec",
- "tracing",
-]
-
-[[package]]
 name = "smallvec"
 version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -324,7 +304,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "701b927e267e8c3db43949fc69151a3d223bd0e457be9c074dfc661d3a6a7285"
 dependencies = [
  "rand",
- "shuttle 0.7.1",
+ "shuttle",
 ]
 
 [[package]]

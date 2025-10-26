@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 
 solana-svm-type-overrides ="3"
-shuttle = {version="0.8", optional=true}
+shuttle = {version="0.7", optional=true}
 dashmap = { version="5", features = ["raw-api"], optional=true }
 cfg-if = "1.0.4"
 
