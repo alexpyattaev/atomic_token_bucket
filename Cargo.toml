@@ -1,0 +1,25 @@
+[package]
+name = "atomic_token_bucket"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+solana-svm-type-overrides ="3"
+shuttle = {version="0.8", optional=true}
+dashmap = { version="5", features = ["raw-api"], optional=true }
+cfg-if = "1.0.4"
+
+[dev-dependencies]
+atomic_token_bucket={path=".", features=["keyed_rate_limiter"]}
+
+[lib]
+path = "src/lib.rs"
+
+[[bench]]
+name="token_bucket"
+harness=false
+
+[features]
+keyed_rate_limiter =["dep:dashmap"]
+shuttle-test = ["dep:shuttle", "solana-svm-type-overrides/shuttle-test"]
